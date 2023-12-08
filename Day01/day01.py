@@ -8,20 +8,15 @@ lines = file.readlines()
 # read lines
 for line in lines:
     print(line)
-<<<<<<< HEAD
     d0 = "0"
     d1 = "0"
     # ---
-=======
-    # extract first digit
->>>>>>> origin/main
     for i in range(len(line)):
         c = line[i]
         if c.isnumeric():
             d0 = int(c)
             # print(int(c))
             break
-<<<<<<< HEAD
     # ---
     for index in reversed(range(len(line))):
         character = line[index]
@@ -37,11 +32,3 @@ for line in lines:
     number = d0 * 10 + d1
     # number = "d0" + "d1"
     print(number)
-=======
-    # extract second digit
-    for j in range(len(line) - 1, 0, -1):
-        c = line[j]
-        if c.isnumeric():
-            print(c)
-            break
->>>>>>> origin/main
